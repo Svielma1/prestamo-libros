@@ -5,12 +5,13 @@
 }
 
 .container {
-
+    text-align: center;
 }
 
 .login {
     background-color: aqua;
     width: max-content;
+    border-radius: 10px;
 }
 
 .login label {
