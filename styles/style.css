@@ -35,13 +35,14 @@ body{
     width: max-content;
     padding-block: 30px;
     margin: 50px;
+    text-align: center;
 }
 
 .login label {
     display: inline-block;
     width: 80px;
     padding: 2px 0;
-    text-align:left;
+
 }
 
 .boton{
