@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/textos.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <u><a href="" class="link">Inicio</a></u>
+          </li>
+          <li>
+            <u><button id="mostrarOpciones">Textos</button></u>
+            <ul id="opcionesTextos" class="hidden">
+              <li><a href="#" id="verTextos">Ver textos</a></li>
+              <li><a href="#" id="agregarTexto">Agregar texto</a></li>
+              <li><a href="#" id="editarTextos">Editar texto</a></li>
+            </ul>
+          </li>
+          <li>
+            <u><a href="" class="link">Usuarios</a></u>
+          </li>
+          <li>
+            <u><a href="" class="link">Prestamos</a></u>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="infoTextos" class="hidden">
+      <form>
+        <h2><u>Nuevo texto</u></h2>
+        <label for="isbn"><strong>ISBN:</strong></label>
+        <input type="text" id="isbn" name="isbn" required /><br /><br />
+        <label for="titulo"><strong>Titulo:</strong></label>
+        <input type="text" id="titulo" name="titulo" required /><br /><br />
+        <label for="autor"><strong>Autor:</strong></label>
+        <input type="text" id="autor" name="autor" required /><br /><br />
+        <label for="editorial"><strong>Editorial:</strong></label>
+        <input
+          type="text"
+          id="editorial"
+          name="editorial"
+          required
+        /><br /><br />
+        <label for="stock"><strong>Stock:</strong></label>
+        <input type="text" id="stock" name="stock" required /><br /><br />
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+    <script src="../scripts/textos.js"></script>
+  </body>
+</html>
