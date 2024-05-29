@@ -4,15 +4,17 @@
     padding: 0;
 }
 
+html {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 ul {
     display: flex;
     gap: 1.2rem;
     list-style: none;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
 }
 
 #opcionesTextos {
@@ -56,4 +58,44 @@ form {
         text-align: center;
     }
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+    background-color: #990000;
+}
+
+.header {
+    display: flex;
+    padding: 20px 4vw;
+    align-items: center;
+}
+
+.usuario {
+    margin-left: auto;
+}
+
+.header img{
+    width: 6rem;
+    height: auto;
+    margin: 0 10px;
+}
+
+.header p {
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
 }
