@@ -42,15 +42,6 @@ body{
     display: inline-block;
     width: 80px;
     padding: 2px 0;
-<<<<<<< HEAD
-}
-
-form {
-    h2 {
-        padding: 20px;
-    }
-=======
-
 }
 
 .boton{
@@ -61,5 +52,4 @@ form {
 .boton input{
     padding: 5px;
     border-radius: 5px;
->>>>>>> da6ac8220d1399abe2bf2ada62cc949ba664ab5a
 }
