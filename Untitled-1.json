@@ -1,0 +1,42 @@
+[
+    {
+        "_id": 1,
+        "titulo": ,
+        "autor": ,
+        "editorial": ,
+        "img": ,
+        "stock":
+    },
+    {
+        "_id": 2,
+        "titulo": ,
+        "autor": ,
+        "editorial": ,
+        "img": ,
+        "stock":
+    },
+    {
+        "_id": 3,
+        "titulo": ,
+        "autor": ,
+        "editorial": ,
+        "img": ,
+        "stock":
+    },
+    {
+        "_id": 4,
+        "titulo": ,
+        "autor": ,
+        "editorial": ,
+        "img": ,
+        "stock":
+    },
+    {
+        "_id": 5,
+        "titulo": ,
+        "autor": ,
+        "editorial": ,
+        "img": ,
+        "stock":
+    }
+]

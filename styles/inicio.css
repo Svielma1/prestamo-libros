@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.link::before {
+    
+}
