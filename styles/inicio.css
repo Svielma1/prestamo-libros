@@ -73,3 +73,18 @@ ul {
 .link:hover::before {
     transform: scaleX(1);
 }
+
+
+
+
+
+
+
+footer {
+    background-color: #F6F6F6;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
