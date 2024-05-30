@@ -23,7 +23,7 @@ ul {
     list-style: none;
 }
 
-#opcionesTextos {
+#opcionesPrestamos {
     display: none;
     position: absolute;
     list-style-type: none;
@@ -34,11 +34,11 @@ ul {
     z-index: 1000;
 }
 
-#opcionesTextos li {
+#opcionesPrestamos li {
     padding: 10px;
 }
 
-#opcionesTextos li:hover {
+#opcionesPrestamos li:hover {
     background-color: #f0f0f0;
 }
 
@@ -46,7 +46,7 @@ ul {
     display: none;
 }
 
-#infoTextos {
+#infoPrestamos {
     border: 3px solid red;
     border-radius: 20px;
     padding: 50px;
@@ -67,7 +67,7 @@ form {
     
 }
 
-.botones {
+.botonesPrestamos {
     background-color: white;
 }
 
@@ -76,15 +76,6 @@ form {
         text-align: center;
         margin-left: 90px;
 }
-
-
-
-
-
-
-
-
-
 
 
 header {

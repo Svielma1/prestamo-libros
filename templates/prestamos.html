@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/prestamos.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href=""
+          ><img
+            src="https://intranet.inacap.cl/tportalvp/portales/tp643228462j405/estilos/logoINACAP.png"
+        /></a>
+        <hr size="30px" />
+        <p>BiblioteCAP</p>
+        <div class="usuario">
+          <p>nombredeladmin</p>
+        </div>
+      </div>
+    </header>
+    <nav class="botonesPrestamos">
+      <ul>
+        <li>
+          <u><a href="" class="link">Inicio</a></u>
+        </li>
+        <li>
+          <u><button>Textos</button></u>
+        </li>
+        <li>
+          <u><a href="" class="link">Usuarios</a></u>
+        </li>
+        <li>
+          <u><button id="mostrarOpciones">Prestamos</button></u>
+          <ul id="opcionesPrestamos" class="hidden">
+            <li><a href="#" id="verPrestamos">Ver Prestamos</a></li>
+            <li><a href="#" id="agregarPrestamos">Agregar Prestamos</a></li>
+            <li><a href="#" id="editarPrestamos">Editar Prestamos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="infoPrestamos" class="hidden">
+      <form>
+        <h2><u>Nuevo Prestamo</u></h2>
+        <label for="usuario"><strong>Usuario:</strong></label>
+        <input type="text" id="usuario" name="usuario" required /><br /><br />
+        <label for="fechaPrestamo"><strong>Fecha prestamo:</strong></label>
+        <input
+          type="text"
+          id="fechaPrestamo"
+          name="fechaPrestamo"
+          required
+        /><br /><br />
+        <label for="fechaDevolucion"><strong>Fecha devolucion:</strong></label>
+        <input
+          type="text"
+          id="fechaDevolucion"
+          name="fechaDevolucion"
+          required
+        /><br /><br />
+        <label for="cantidad"><strong>Cantidad:</strong></label>
+        <input type="text" id="cantidad" name="cantidad" required /><br /><br />
+        <label for="ejemplar"><strong>Ejemplar:</strong></label>
+        <input type="text" id="ejemplar" name="ejemplar" required /><br /><br />
+        <label for="atraso"><strong>Atraso:</strong></label>
+        <input type="text" id="atraso" name="atraso" required /><br /><br />
+        <label for="multa"><strong>Multa:</strong></label>
+        <input type="text" id="multa" name="multa" required /><br /><br />
+        <button type="submit" id="boton">Agregar</button>
+      </form>
+    </div>
+    <script src="../scripts/prestamos.js"></script>
+  </body>
+</html>
