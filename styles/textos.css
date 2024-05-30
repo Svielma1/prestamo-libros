@@ -85,16 +85,22 @@ button{
 }
 
 #boton {
-        padding: 6px;
-        text-align: center;
-        margin-left: 50px;
-        margin-top: 5px;
+    padding: 6px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 header {
     background-color: #990000;
 }
 
+.textos{
+    text-align: center;
+}
+th tr{
+    margin: 10px;
+}
 .header {
     display: flex;
     padding: 20px 4vw;
