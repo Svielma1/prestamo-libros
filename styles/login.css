@@ -41,8 +41,9 @@ body{
     background-color: #ffffff;
     width: max-content;
     padding-block: 30px;
-    margin: 20px 50px;
+    margin: 20px 60px;
     text-align: center;
+    font-weight: bold;
 }
 
 .login label {
