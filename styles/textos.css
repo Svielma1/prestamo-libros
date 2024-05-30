@@ -21,6 +21,8 @@ ul {
     display: flex;
     gap: 1.2rem;
     list-style: none;
+    padding: 5px;
+    font-weight: bold;
 }
 
 #opcionesTextos {
@@ -47,7 +49,7 @@ ul {
 }
 
 #infoTextos {
-    border: 3px solid red;
+    border: 3px solid black;
     border-radius: 20px;
     padding: 50px;
     display: none;
@@ -63,29 +65,31 @@ form {
     h2 {
         margin-bottom: 20px;
         text-align: center;
+        text-decoration: underline;
+        border: 3px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        color: red;
     }
-    
 }
 
 .botones {
     background-color: white;
 }
 
-#boton {
-        padding: 10px;
-        text-align: center;
-        margin-left: 90px;
+button{
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
+#boton {
+        padding: 6px;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 5px;
+}
 
 header {
     background-color: #990000;
