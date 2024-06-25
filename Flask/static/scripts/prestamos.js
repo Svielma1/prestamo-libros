@@ -35,6 +35,6 @@ document.getElementById('formPrestamo').addEventListener('submit', function (eve
 
 document.getElementById('verPrestamos').addEventListener('click', function () {
     var tablaPrestamos = document.getElementById('tablaPrestamos');
-    tablaPrestamos.classList.remove('hidden');
     tablaPrestamos.style.display = 'block';
 });
+

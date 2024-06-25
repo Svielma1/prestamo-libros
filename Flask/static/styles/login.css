@@ -12,7 +12,7 @@ html {
 }
 
 body{
-    background-image: url("../../assets/fondoInicio.jpg");
+    background-image: url("../assets/fondoInicio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
