@@ -32,13 +32,13 @@
     <nav class="navegador">
       <ul>
         <li>
-          <button class="link" id="mostrarOpciones">Inicio</button> <!-- borre la etiqueta <u>, siesque era importante dejo la sintaxis original: <u><a href="" class="link">Inicio</a></u> -->
+          <button class="link" id="">Inicio</button> <!-- borre la etiqueta <u>, siesque era importante dejo la sintaxis original: <u><a href="" class="link">Inicio</a></u> -->
         </li>
         <li>
-          <button class="link" id="mostrarOpciones">Textos</button>
+          <button class="link" id="">Textos</button>
         </li>
         <li>
-          <button class="link" id="mostrarOpciones">Usuarios</button>
+          <button class="link" id="">Usuarios</button>
         </li>
         <li>
           <button class="link" id="mostrarOpciones">Prestamos</button>
@@ -91,6 +91,7 @@
             <th>Ejemplar</th>
             <th>Atraso</th>
             <th>Multa</th>
+            <th>&nbsp</th>
           </tr>
         </thead>
         {% for datos in prestamos %}
@@ -103,6 +104,7 @@
             <td>{{datos.ejemplaresIsbn}}</td>
             <td>x</td>
             <td>x</td>
+            <td><button>Eliminar</button></td>
           </tr>
         </tbody>
         {% endfor %}
