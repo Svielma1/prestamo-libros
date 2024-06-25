@@ -53,4 +53,3 @@ document.getElementById('verPrestamos').addEventListener('click', function () {
         tablaPrestamos.style.display = 'none';
     }
 });
-
