@@ -7,11 +7,11 @@ app.use(express.json())
 
 app.get('/prestamos', (req, res) => {
     Prestamo.find()
-        .then(prestamo => {
-            if (!prestamo) {
-                return res.status(404).json({ message: 'Prestamo no encontrado.' })
-            } else {
-                res.json(prestamo)
+        .then(prestamos => {
+            if (prestamos.length > 0){
+                res.json(prestamos);
+            }else{
+                res.json({message: 'No se encontraron datos en la coleccion prestamos.'})
             }
         })
         .catch(err => {

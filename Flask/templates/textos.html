@@ -9,7 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/textos.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/textos.css') }}"
+    />
     <title>Inicio</title>
   </head>
   <body>
@@ -112,6 +115,6 @@
         </tbody>
       </table>
     </div>
-    <script src="../scripts/textos.js"></script>
+    <script src="{{ url_for('static', filename='scripts/textos.js') }}"></script>
   </body>
 </html>
