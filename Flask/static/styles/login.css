@@ -9,12 +9,18 @@ html {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    height: 100%;
 }
 
 body{
     background-image: url("../assets/fondoInicio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+}
+
+.body {
+    height: 70.8%;
 }
 
 .container {
@@ -95,4 +101,81 @@ header {
     margin: 0 10px;
     font-weight: bold;
     font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+.datos p, .datos a {
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+.footer {
+    font-size: 10px;
+    font-family: Arial;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+address {
+    font-style: normal;
+}
+
+.contactos {
+    width: 20%;
+}
+
+.contactos p {
+    margin: 0.3rem 0;
+}
+
+footer {
+    background-color: #F6F6F6;
+    padding: 20px 5vw;
+    margin: 0 auto;
+    background-image: url(https://intranet.inacap.cl/tportalvp/portales/tp643228462j405/estilos/bg-footerTopRSP.png);
+    background-repeat: repeat-x;
+    background-position: center top;
+    background-color: #f6f6f6;
+}
+
+.redes {
+    text-align: center;
+    margin-left: auto;
+}
+
+.acreditacion {
+    margin-left: auto;
+}
+
+.acreditacion img {
+    width: auto;
+    height: 78px;
+}
+
+.redes img{
+    margin: 0.4rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.logoFooter img {
+    width: 80px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.logos {
+    display: flex;
 }

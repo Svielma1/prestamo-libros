@@ -8,6 +8,7 @@ body {
     background-image: url("../assets/fondoTextos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 html {
@@ -15,6 +16,11 @@ html {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    height: 100%;
+}
+
+.body {
+    height: 70.8%;
 }
 
 .navegador {
@@ -201,7 +207,7 @@ address {
 
 footer {
     background-color: #F6F6F6;
-    padding: 20px 5vw;
+    padding: 20px 10vw;
     margin: 0 auto;
     background-image: url(https://intranet.inacap.cl/tportalvp/portales/tp643228462j405/estilos/bg-footerTopRSP.png);
     background-repeat: repeat-x;

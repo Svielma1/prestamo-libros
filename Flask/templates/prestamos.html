@@ -50,65 +50,68 @@
         </li>
       </ul>
     </nav>
-    <div id="infoPrestamos" class="hidden">
-      <form id="formPrestamo">
-        <h2><u>Nuevo Prestamo</u></h2>
-        <label for="usuario"><strong>Usuario:</strong></label>
-        <input type="text" id="usuario" name="usuario" required /><br /><br />
-        <label for="fechaPrestamo"><strong>Fecha prestamo:</strong></label>
-        <input
-          type="text"
-          id="fechaPrestamo"
-          name="fechaPrestamo"
-          required
-        /><br /><br />
-        <label for="fechaDevolucion"><strong>Fecha devolucion:</strong></label>
-        <input
-          type="text"
-          id="fechaDevolucion"
-          name="fechaDevolucion"
-          required
-        /><br /><br />
-        <label for="cantidad"><strong>Cantidad:</strong></label>
-        <input type="text" id="cantidad" name="cantidad" required /><br /><br />
-        <label for="ejemplar"><strong>Ejemplar:</strong></label>
-        <input type="text" id="ejemplar" name="ejemplar" required /><br /><br />
-        <label for="atraso"><strong>Atraso:</strong></label>
-        <input type="text" id="atraso" name="atraso" required /><br /><br />
-        <label for="multa"><strong>Multa:</strong></label>
-        <input type="text" id="multa" name="multa" required /><br /><br />
-        <button type="submit" id="boton">Agregar</button>
-      </form>
-    </div>
-    <div id="tablaPrestamos" class="hidden">
-      <table class="prestamos">
-        <thead>
-          <tr>
-            <th>RUT</th>
-            <th>Fecha prestamo</th>
-            <th>Fecha devolucion</th>
-            <th>Cantidad textos</th>
-            <th>Ejemplar</th>
-            <th>Atraso</th>
-            <th>Multa</th>
-            <th>&nbsp</th>
-          </tr>
-        </thead>
-        {% for datos in prestamos %}
-        <tbody>
-          <tr>
-            <td>{{datos.rut}}</td>
-            <td>{{datos.fechaPrestamo}}</td>
-            <td>{{datos.fechaDevolucion}}</td>
-            <td>{{datos.cantidadTextos}}</td>
-            <td>{{datos.ejemplaresIsbn}}</td>
-            <td>x</td>
-            <td>x</td>
-            <td><button>Eliminar</button></td>
-          </tr>
-        </tbody>
-        {% endfor %}
-      </table>
+    <div class="body">
+      <div id="infoPrestamos" class="hidden">
+        <form id="formPrestamo">
+          <h2><u>Nuevo Prestamo</u></h2>
+          <label for="usuario"><strong>Usuario:</strong></label>
+          <input type="text" id="usuario" name="usuario" required /><br /><br />
+          <label for="fechaPrestamo"><strong>Fecha prestamo:</strong></label>
+          <input
+            type="text"
+            id="fechaPrestamo"
+            name="fechaPrestamo"
+            required
+          /><br /><br />
+          <label for="fechaDevolucion"><strong>Fecha devolucion:</strong></label>
+          <input
+            type="text"
+            id="fechaDevolucion"
+            name="fechaDevolucion"
+            required
+          /><br /><br />
+          <label for="cantidad"><strong>Cantidad:</strong></label>
+          <input type="text" id="cantidad" name="cantidad" required /><br /><br />
+          <label for="ejemplar"><strong>Ejemplar:</strong></label>
+          <input type="text" id="ejemplar" name="ejemplar" required /><br /><br />
+          <label for="atraso"><strong>Atraso:</strong></label>
+          <input type="text" id="atraso" name="atraso" required /><br /><br />
+          <label for="multa"><strong>Multa:</strong></label>
+          <input type="text" id="multa" name="multa" required /><br /><br />
+          <button type="submit" id="boton">Agregar</button>
+        </form>
+      </div>
+      <div id="tablaPrestamos" class="hidden">
+        <table class="prestamos">
+          <thead>
+            <tr>
+              <th>RUT</th>
+              <th>Fecha prestamo</th>
+              <th>Fecha devolucion</th>
+              <th>Cantidad textos</th>
+              <th>Ejemplar</th>
+              <th>Atraso</th>
+              <th>Multa</th>
+              <th>&nbsp</th>
+            </tr>
+          </thead>
+          {% for datos in prestamos %}
+          <tbody>
+            <tr>
+              <td>{{datos.rut}}</td>
+              <td>{{datos.fechaPrestamo}}</td>
+              <td>{{datos.fechaDevolucion}}</td>
+              <td>{{datos.cantidadTextos}}</td>
+              <td>{{datos.ejemplaresIsbn}}</td>
+              <td>x</td>
+              <td>x</td>
+              <td><button>Eliminar</button></td>
+              <td><button>Editar</button></td>
+            </tr>
+          </tbody>
+          {% endfor %}
+        </table>
+      </div>
     </div>
     <footer>
       <div class="logoFooter">

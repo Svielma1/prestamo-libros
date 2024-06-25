@@ -38,4 +38,3 @@ document.getElementById('verPrestamos').addEventListener('click', function () {
     tablaPrestamos.classList.remove('hidden');
     tablaPrestamos.style.display = 'block';
 });
-
