@@ -32,10 +32,7 @@
     <nav class="navegador">
       <ul>
         <li>
-          <button class="link" id="">Inicio</button> <!-- borre la etiqueta <u>, siesque era importante dejo la sintaxis original: <u><a href="" class="link">Inicio</a></u> -->
-        </li>
-        <li>
-          <button class="link" id="">Textos</button>
+          <button class="link" id="">Textos</button> <!-- borre la etiqueta <u>, siesque era importante dejo la sintaxis original: <u><a href="" class="link">Textos</a></u> -->
         </li>
         <li>
           <button class="link" id="">Usuarios</button>
@@ -45,7 +42,6 @@
           <ul id="opcionesPrestamos" class="hidden">
             <li><a href="#" id="verPrestamos">Ver Prestamos</a></li>
             <li><a href="#" id="agregarPrestamos">Agregar Prestamos</a></li>
-            <li><a href="#" id="editarPrestamos">Editar Prestamos</a></li>
           </ul>
         </li>
       </ul>
@@ -105,8 +101,9 @@
               <td>{{datos.ejemplaresIsbn}}</td>
               <td>x</td>
               <td>x</td>
-              <td><button>Eliminar</button></td>
               <td><button>Editar</button></td>
+              <form></form>
+              <td><button class="boton-delete" data-id="{{ datos._id }}">Eliminar</button></td>
             </tr>
           </tbody>
           {% endfor %}
