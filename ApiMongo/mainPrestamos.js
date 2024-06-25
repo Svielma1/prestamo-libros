@@ -1,21 +1,21 @@
 const express = require('express')
 require('./db')
-const Propiedad = require('./Propiedad')
+const Prestamo = require('../ApiMongo/Esquemas')
 
 const app = express();
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    Propiedad.find()
-    .then(propiedad => {
-        if(!propiedad) {
-            return res.status(404).json({message: 'Propiedad no encontrada.'})
+app.get('/prestamos', (req, res) => {
+    Prestamo.find()
+    .then(prestamo => {
+        if(!prestamo) {
+            return res.status(404).json({message: 'Prestamo no encontrado.'})
         } else {
-            res.json(propiedad)
+            res.json(prestamo)
         }
     })
     .catch(err => {
-        console.error("Error al buscar el restaurante :", err)
+        console.error("Error al buscar el prestamo :", err)
         res.status(500).json({error: 'Error interno del servidor.'})
     });
 });
