@@ -1,16 +1,27 @@
-document.getElementById('mostrarOpciones').addEventListener('click', function () {
-    var opcionesPrestamos = document.getElementById('opcionesPrestamos');
-    if (opcionesPrestamos.style.display === 'none' || opcionesPrestamos.style.display === '') {
-        opcionesPrestamos.style.display = 'block';
-    } else {
-        opcionesPrestamos.style.display = 'none';
-    }
+document.getElementById('mostrarOpciones').addEventListener('mouseover', function () {
+    opcionesPrestamos.style.display = 'block';
+});
+
+document.getElementById('mostrarOpciones').addEventListener('mouseout', function () {
+    opcionesPrestamos.style.display = 'none';
+});
+
+document.getElementById('opcionesPrestamos').addEventListener('mouseover', function () {
+    opcionesPrestamos.style.display = 'block';
+});
+
+document.getElementById('opcionesPrestamos').addEventListener('mouseout', function () {
+    opcionesPrestamos.style.display = 'none';
 });
 
 document.getElementById('agregarPrestamos').addEventListener('click', function () {
     var infoPrestamos = document.getElementById('infoPrestamos');
-    infoPrestamos.classList.remove('hidden');
-    infoPrestamos.style.display = 'block';
+    if (infoPrestamos.style.display === 'none' || infoPrestamos.style.display === '') {
+        infoPrestamos.style.display = 'block';
+        tablaPrestamos.style.display = 'none';
+    } else {
+        infoPrestamos.style.display = 'none';
+    }
 });
 
 document.getElementById('formPrestamo').addEventListener('submit', function (event) {
@@ -35,7 +46,11 @@ document.getElementById('formPrestamo').addEventListener('submit', function (eve
 
 document.getElementById('verPrestamos').addEventListener('click', function () {
     var tablaPrestamos = document.getElementById('tablaPrestamos');
-    tablaPrestamos.classList.remove('hidden');
-    tablaPrestamos.style.display = 'block';
+    if (tablaPrestamos.style.display === 'none' ||tablaPrestamos.style.display === '') {
+        tablaPrestamos.style.display = 'block';
+        infoPrestamos.style.display = 'none';
+    } else {
+        tablaPrestamos.style.display = 'none';
+    }
 });
 
