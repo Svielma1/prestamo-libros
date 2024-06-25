@@ -7,17 +7,17 @@ app.use(express.json())
 
 app.get('/prestamos', (req, res) => {
     Prestamo.find()
-    .then(prestamo => {
-        if(!prestamo) {
-            return res.status(404).json({message: 'Prestamo no encontrado.'})
-        } else {
-            res.json(prestamo)
-        }
-    })
-    .catch(err => {
-        console.error("Error al buscar el prestamo :", err)
-        res.status(500).json({error: 'Error interno del servidor.'})
-    });
+        .then(prestamo => {
+            if (!prestamo) {
+                return res.status(404).json({ message: 'Prestamo no encontrado.' })
+            } else {
+                res.json(prestamo)
+            }
+        })
+        .catch(err => {
+            console.error("Error al buscar el prestamo :", err)
+            res.status(500).json({ error: 'Error interno del servidor.' })
+        });
 });
 
 const port = process.env.PORT || 2000

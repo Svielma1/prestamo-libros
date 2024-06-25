@@ -51,7 +51,7 @@
       </ul>
     </nav>
     <div id="infoPrestamos" class="hidden">
-      <form>
+      <form id="formPrestamo">
         <h2><u>Nuevo Prestamo</u></h2>
         <label for="usuario"><strong>Usuario:</strong></label>
         <input type="text" id="usuario" name="usuario" required /><br /><br />
@@ -93,9 +93,10 @@
             <th>Multa</th>
           </tr>
         </thead>
+        {% for datos in prestamo %}
         <tbody>
           <tr>
-            <td>RUT 1</td>
+            <td>{{datos.rut}}</td>
             <td>Fecha 1</td>
             <td>Fecha 2</td>
             <td>X</td>
@@ -122,6 +123,7 @@
             <td>$$</td>
           </tr>
         </tbody>
+        {% endfor %}
       </table>
     </div>
   </body>
