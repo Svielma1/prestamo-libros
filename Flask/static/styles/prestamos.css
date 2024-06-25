@@ -17,6 +17,13 @@ html {
     font-style: normal;
 }
 
+main {
+    margin: 0px auto;
+    width: 100%;
+    min-height: 100dvh;
+}
+
+
 .navegador {
     background-color: #F0F0F0;
     padding: 1.5rem 5vw;
