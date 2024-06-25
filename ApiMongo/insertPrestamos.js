@@ -1,16 +1,16 @@
 const express = require('express')
 require('./db')
-const Propiedad = require('./Propiedad')
+const Prestamo = require('../ApiMongo/Esquemas')
 
 const app = express();
 app.use(express.json())
 
-app.post('/propiedades', (req, res)=> {
-    const newPropiedad = new Propiedad(req.body);
-    newPropiedad.save()
-        .then(propiedad => res.status(201).json(propiedad))
+app.post('/prestamos', (req, res)=> {
+    const newPrestamo = new Prestamo(req.body);
+    newPrestamo.save()
+        .then(prestamo => res.status(201).json(prestamo))
         .catch(err => {
-            console.error("Error al insertar la propiedad. ", err);
+            console.error("Error al insertar el prestamo. ", err);
             res.status(500),json({error: 'Error interno del servidor.'})
         })
 });

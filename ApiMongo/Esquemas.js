@@ -89,8 +89,8 @@ const DeudaSchema = new mongoose.Schema({
 });
 
 const PrestamoSchema = new mongoose.Schema({
-    _id: {
-        type: Number,
+    rut: {
+        type: String,
         required: true
     },
     fechaPrestamo: {
