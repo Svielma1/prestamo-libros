@@ -157,5 +157,5 @@ const LibroSchema = new mongoose.Schema({
         }
 });
 
-const Libro = mongoose.model('libro', LibroSchema, 'libros') // (Nombre modelo, Estructura modelo, Coleccion donde se guarda)
-module.exports = Libro
+const Prestamo = mongoose.model('prestamo', PrestamoSchema, 'prestamos') // (Nombre modelo, Estructura modelo, Coleccion donde se guarda)
+module.exports = Prestamo
