@@ -45,24 +45,16 @@
           <ul id="opcionesPrestamos" class="hidden">
             <li><a href="#" id="verPrestamos">Ver Prestamos</a></li>
             <li><a href="#" id="agregarPrestamos">Agregar Prestamos</a></li>
-            <li><a href="#" id="editarPrestamos">Editar Prestamos</a></li>
           </ul>
         </li>
       </ul>
     </nav>
     <div class="body">
       <div id="infoPrestamos" class="hidden">
-        <form id="formPrestamo">
+        <form id="formPrestamo" class="formulario">
           <h2><u>Nuevo Prestamo</u></h2>
           <label for="usuario"><strong>Usuario:</strong></label>
           <input type="text" id="usuario" name="usuario" required /><br /><br />
-          <label for="fechaPrestamo"><strong>Fecha prestamo:</strong></label>
-          <input
-            type="text"
-            id="fechaPrestamo"
-            name="fechaPrestamo"
-            required
-          /><br /><br />
           <label for="fechaDevolucion"><strong>Fecha devolucion:</strong></label>
           <input
             type="text"
@@ -92,6 +84,7 @@
               <th>Ejemplar</th>
               <th>Atraso</th>
               <th>Multa</th>
+              <th>&nbsp</th>
               <th>&nbsp</th>
             </tr>
           </thead>

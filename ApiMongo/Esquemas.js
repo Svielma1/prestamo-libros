@@ -128,8 +128,8 @@ const EjemplarSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    libroId: {
-        type: Number,
+    libroTitulo: {
+        type: String,
         required: true
     }
 },{_id: false});

@@ -1,0 +1,63 @@
+[
+    {
+        "ISBN": 9788441545878,
+        "ubicacion":"Sede Renca",
+        "estado":"Disponible",
+        "tituloLibro":"El programador pragmático"
+    },
+    {
+        "ISBN": 9788441532106,
+        "ubicacion":"Sede Maipu",
+        "estado":"Disponible",
+        "tituloLibro":"Código limpio"
+    },
+    {
+        "ISBN": 201633612,
+        "ubicacion":"Sede Renca",
+        "estado":"Disponible",
+        "tituloLibro":"Design Patterns"
+    },
+    {
+        "ISBN": 8448161114,
+        "ubicacion":"Sede Renca",
+        "estado":"No disponible",
+        "tituloLibro":"Fundamentos de Programación"
+    },
+    {
+        "ISBN": 9788418551468,
+        "ubicacion":"Sede Camino Agricola",
+        "estado":"Disponible",
+        "tituloLibro":"Introducción a la Programación con Python"
+    },
+    {
+        "ISBN": 9780137081073,
+        "ubicacion":"Sede Renca",
+        "estado":"Disponible",
+        "tituloLibro":"The Clean Coder"
+    },
+    {
+        "ISBN": 201038064,
+        "ubicacion":"Sede Renca",
+        "estado":"Disponible",
+        "tituloLibro":"art of computer programming vo (en Inglés)"
+    },
+    {
+        "ISBN": 157586326,
+        "ubicacion":"Sede Renca",
+        "estado":"Disponible",
+        "tituloLibro":"Things a Computer Scientist Rarely Talks about"
+    },
+    {
+        "ISBN": 157586326,
+        "ubicacion":"Sede Renca",
+        "estado":"Disponible",
+        "tituloLibro":"Things a Computer Scientist Rarely Talks about"
+    },
+    {
+        "_id": 10,
+        "titulo":"Curso de Programación Python",
+        "autor":"Arturo Montejo Ráez",
+        "editorial":"Anaya Multimedia",
+        "stock":"2"
+    }
+]
